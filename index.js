@@ -4,7 +4,7 @@ async function getData(lat,long){
     return await promise.json();
 }
 async function gotLocation(position){/*success */
-// console.log(position);
+// console.log(position)
     const result=await getData(position.coords.latitude,position.coords.longitude);
     console.log(result);
 }
